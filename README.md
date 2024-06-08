@@ -1,2 +1,4 @@
-# Algonauts Official OG https://algolinks.algo.xyz/
+# Algonauts Official 
 Algonaut Curated Unofficial One-Stop Hub for Algorand
+
+https://algolinks.algo.xyz/
