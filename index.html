@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- <Algolinks.algo.zyx https://github.com/algolinks/algolinks.algo.xyz/blob/main/index.html HTML code 6/12/24 updated 6/12/24> -->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,47 +21,89 @@
       background-repeat: no-repeat;
       opacity: 0.4; /* Adjust the opacity for transparency */
       z-index: -1; /* Ensure the overlay is behind the content */
+      transition: background-image 0.5s ease-in-out; /* Smooth transition for background change */
     }
-    header {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      padding: 5px;
-    }
-    .left, .center, .right {
-      flex: 1;
-    }
-    .left {
-      text-align: left;
-    }
-    .center {
+    header.header-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(5, auto);
+      gap: 10px;
+      padding: 10px;
       text-align: center;
+      align-items: center;
     }
-    .right {
-      text-align: right;
+    header.header-grid .grid-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    header.header-grid .grid-item h1,
+    header.header-grid .grid-item h2,
+    header.header-grid .grid-item p,
+    header.header-grid .grid-item select,
+    header.header-grid .grid-item form {
+      margin: 0;
     }
   </style>
+
+<!--head 6/12/24>--> 
 </head>
 <body class="relative">
 
-  <div class="bg-overlay"></div>
+  <div class="bg-overlay" id="bgOverlay"></div>
 
-<header>
-  <div><!-- Left Text-->
-  </div>
-  <div>
-    <header class="flex flex-col md:flex-row justify-between items-center md:items-end"> 
+<header class="header-grid">
+     <!-- Left Text-->
+     
+    <!-- 
+     I like the berger button and when you hover over with the mouse it opens the buttons but it messes up the format, don't need it now, work on later, 6/12/24
+     <div>
+    <div class="grid-item" style="grid-column: 1; grid-row: 1;">
+        <div class="container">
+        <div class="dropdown relative">
+            <button class="text-gray-800 text-lg">☰</button>
+            <div class="dropdown-content py-2">
+                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Link 1</a>
+                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Link 2</a>
+                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Link 3</a>
+            </div>
+        </div>
+    </div>
+ -->
+    
+   <!-- <div class="flex flex-col md:flex-row justify-between items-center md:items-end"> -->
+    <div class="grid-item" style="grid-column: 1 / 4; grid-row: 1;">
+      <h1 class="text-sky-950 font-bold text-2xl pb-2">
+        <a href="https://algolinks.algo.xyz/" alt="Algo Algorand Algonauts Algolinks">Algolinks.algo.xyz</a>
+      </h1>
+    </div>
+    <div class="grid-item" style="grid-column: 1 / 4; grid-row: 2;">
+      <h2 class="text-sky-950 font-bold text-xs md:text-base">
+        <a href="https://algolinks.algo.xyz/" alt="Algo Algorand Algonauts Algolinks Algonaut Curated Unofficial One-Stop Hub For Algorand">Algonaut Curated Unofficial One-Stop Hub For Algorand</a>
+      </h2>
+    </div>
+    <div class="grid-item" style="grid-column: 1 / 4; grid-row: 3;">
+      <p class="text-sky-950 font-semibold text-xs">
+        <a href="https://algolinks.algo.xyz/" alt="Algo Algorand Algonauts Algolinks Algorand Official links are bolded">Algorand Official links are bolded</a>
+      </p>
+    </div>
 
-    <div class="flex flex-col justify-center items-center">
-      <h1 class="text-sky-950 font-bold text-2xl pb-2"><a href="https://algolinks.algo.xyz/">Algolinks.algo.xyz</a></h1>
-      <h2 class="text-sky-950 font-bold text-xs md:text-base">Algonaut Curated Unofficial One-Stop Hub For Algorand</h2>
-      <p class="text-sky-950 font-semibold text-xs">Algorand Official links are bolded</p>
-    </header>
+  <!-- header search button above search box adding and working on 6.12.24-->
+  <div class="grid-item" style="grid-column:  3; grid-row: 2;">
+    <select id="searchOptions" class="w-2/5 text-sm p-1 border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md bg-transparent border-transparent focus:border-transparent focus:ring-1">
+      <option value=""> </option>
+      <option value="defi">defi</option>
+      <option value="nft">nft</option>
+      <option value="yield">yield farming</option>
+      <option value="trade">trade</option>
+      <option value="official">official</option>
+    </select>
   </div>
-  <div>
-    <!-- Search Form -->
-    <form id="searchForm" class="mt-4 md:mt-0 flex items-center justify-center md:justify-end relative">
-      <input type="text" id="searchInput" class="border border-gray-300 p-1 pr-1 rounded-sm" placeholder="Search links...">
+
+   <!-- Search Form updated 6/12/24 to include searching/sorting while typing and added some for the search button -->
+  <div class="grid-item" style="grid-column: 3; grid-row: 3;">
+    <form id="searchForm" class="flex items-center relative">
+      <input type="text" id="searchInput" class="border border-gray-300 focus:outline focus:ring-indigo-500 focus:border-indigo-500 p-1 pr-1 rounded-b-md bg-transparent focus:ring-1" placeholder="Search links...">
       <button type="submit" class="absolute right-0 mr-2 text-gray-500">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
@@ -68,9 +111,38 @@
       </button>
     </form>
   </div>
+
+     <!-- header background button right hand side added 6/12/24 -->
+     <!-- <div class="relative mt-4 md:mt-0"> -->
+  <div class="grid-item" style="grid-column: 4 ; grid-row: 3;">
+      <select id="backgroundSelect" class="text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md bg-transparent border-transparent focus:border-transparent focus:ring-1">
+        <option value="Algo-mountain.jpg">Mountain</option>
+        <option value="algo Algonaut Orbit.jpg">Algonaut</option>
+        <option value="Algo-mountain og .jpg">mountain lake</option>
+        <option value="Algo Amir Kabir Dam Karaj River .jpg">Karaj River</option>
+        <option value="Algo The Alps og .jpg">Alps far</option>
+        <option value="Algo The Alps.jpg">Alps zoom</option>
+        <option value="Algo Zion National Park .jpg">Zion</option>
+        <option value="algophone_gray_black.jpg">gray_black</option>
+        <option value="algophone_sunrise_srw.jpg">sunrise</option>
+        <option value="series2_blue_08.jpg">blue_black</option>
+      </select>
+  </div>
+    <!-- Additional rows for spacing or future elements -->
+  <div class="grid-item" style="grid-column: 1 / 2; grid-row: 3;"></div>
+  <div class="grid-item" style="grid-column: 2 / 3; grid-row: 3;"></div>
+  <div class="grid-item" style="grid-column: 3 / 4; grid-row: 3;"></div>
+  <div class="grid-item" style="grid-column: 1 / 2; grid-row: 4;"></div>
+  <div class="grid-item" style="grid-column: 2 / 3; grid-row: 4;"></div>
+  <div class="grid-item" style="grid-column: 3 / 4; grid-row: 4;"></div>
+  <div class="grid-item" style="grid-column: 1 / 2; grid-row: 5;"></div>
+  <div class="grid-item" style="grid-column: 2 / 3; grid-row: 5;"></div>
+  <div class="grid-item" style="grid-column: 3 / 4; grid-row: 5;"></div>
 </header>
-  
-<main class="font-sans">
+</body>
+
+ <!-- <Algolinks.algo.zyx https://github.com/algolinks/algolinks.algo.xyz/blob/main/index.html HTML Code 6/12/24 code below> -->
+  <main class="font-sans">
 
     <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 m-8">
       <div class="flex flex-col items-center">
@@ -389,10 +461,60 @@
     </div>
 
     <hr class="border-solid border-blue-600 border-4 opacity-15">
-
   </main>
 
-  <!-- JavaScript for Search Functionality -->
+<!-- JavaScript for Search Functionality added 6/12/24 for searching with the button above search -->
+<script>
+  function performSearch(query) {
+    const items = document.querySelectorAll('.search-item');
+    items.forEach(item => {
+      const tags = item.getAttribute('data-tags') ? item.getAttribute('data-tags').toLowerCase() : '';
+      if (item.textContent.toLowerCase().includes(query) || tags.includes(query)) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  }
+
+  // for search box button above the search box I think added 6/12/24
+  document.getElementById('searchForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const queryInput = document.getElementById('searchInput').value.toLowerCase();
+    performSearch(queryInput);
+  });
+
+// Listen for input event on the search input field added 6/12/24
+document.getElementById('searchInput').addEventListener('input', function() {
+    const queryInput = this.value.toLowerCase();
+    performSearch(queryInput);
+  });
+
+  document.getElementById('searchOptions').addEventListener('change', function() {
+    const searchOption = this.value.toLowerCase();
+    performSearch(searchOption);
+  });
+</script>
+
+<!-- JavaScript for Search Functionality trying to move the button about search added 6/12/24 -->
+<script>
+  document.getElementById('linksearch').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const query = document.getElementById('searchInput').value.toLowerCase();
+    const items = document.querySelectorAll('.search-item');
+    items.forEach(item => {
+      const tags = item.getAttribute('data-tags') ? item.getAttribute('data-tags').toLowerCase() : '';
+      if (item.textContent.toLowerCase().includes(query) || tags.includes(query)) {
+        item.style.display = 'block';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  });
+</script>
+
+<!-- OG before 6/12/24
+  !-- JavaScript for Search Functionality OG below 6/12/24--
   <script>
     document.getElementById('searchForm').addEventListener('submit', function(event) {
       event.preventDefault();
@@ -408,7 +530,24 @@
       });
     });
   </script>
+-->
 
+<!-- JavaScript for Background Changead added 6/12/24 -->
+<script>
+  document.getElementById('backgroundSelect').addEventListener('change', function() {
+    const bgOverlay = document.getElementById('bgOverlay');
+    const selectedImage = this.value;
+    bgOverlay.style.backgroundImage = `url('${selectedImage}')`;
+  });
+
+  document.getElementById('backgroundSelectPanel').addEventListener('change', function() {
+    const bgOverlay = document.getElementById('bgOverlay');
+    const selectedImage = this.value;
+    bgOverlay.style.backgroundImage = `url('${selectedImage}')`;
+  });
+</script>
+
+<!-- Footer never changed 6/12/24-->
 <html lang="en">
  <footer class="text-start text-gray-800 text-sm py-4">
     <div class="container mx-auto flex justify-between items-center px-4">
