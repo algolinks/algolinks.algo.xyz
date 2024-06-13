@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- <Algolinks.algo.zyx https://github.com/algolinks/algolinks.algo.xyz/blob/main/index.html HTML code 6/12/24 updated 6/12/24> -->
+<!-- <Algolinks.algo.zyx https://github.com/algolinks/algolinks.algo.xyz/blob/main/index.html HTML code updated 6/13/24> -->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -71,7 +71,7 @@
     </div>
  -->
     
-   <!-- <div class="flex flex-col md:flex-row justify-between items-center md:items-end"> -->
+   <!-- center text -->
     <div class="grid-item" style="grid-column: 1 / 4; grid-row: 1;">
       <h1 class="text-sky-950 font-bold text-2xl pb-2">
         <a href="https://algolinks.algo.xyz/" alt="Algo Algorand Algonauts Algolinks">Algolinks.algo.xyz</a>
@@ -88,7 +88,7 @@
       </p>
     </div>
 
-  <!-- header search button above search box adding and working on 6.12.24-->
+  <!-- right text header search button above search box adding and working on 6.12.24-->
   <div class="grid-item" style="grid-column:  3; grid-row: 2;">
     <select id="searchOptions" class="w-2/5 text-sm p-1 border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md bg-transparent border-transparent focus:border-transparent focus:ring-1">
       <option value=""> </option>
@@ -97,10 +97,11 @@
       <option value="yield">yield farming</option>
       <option value="trade">trade</option>
       <option value="official">official</option>
+      <option value="dapp">dapps</option>
     </select>
   </div>
 
-   <!-- Search Form updated 6/12/24 to include searching/sorting while typing and added some for the search button -->
+   <!-- right text header Search Form updated 6/12/24 to include searching/sorting while typing and added some for the search button -->
   <div class="grid-item" style="grid-column: 3; grid-row: 3;">
     <form id="searchForm" class="flex items-center relative">
       <input type="text" id="searchInput" class="border border-gray-300 focus:outline focus:ring-indigo-500 focus:border-indigo-500 p-1 pr-1 rounded-b-md bg-transparent focus:ring-1" placeholder="Search links...">
@@ -113,7 +114,6 @@
   </div>
 
      <!-- header background button right hand side added 6/12/24 -->
-     <!-- <div class="relative mt-4 md:mt-0"> -->
   <div class="grid-item" style="grid-column: 4 ; grid-row: 3;">
       <select id="backgroundSelect" class="text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md bg-transparent border-transparent focus:border-transparent focus:ring-1">
         <option value="Algo-mountain.jpg">Mountain</option>
@@ -141,15 +141,15 @@
 </header>
 </body>
 
- <!-- <Algolinks.algo.zyx https://github.com/algolinks/algolinks.algo.xyz/blob/main/index.html HTML Code 6/12/24 code below> -->
-  <main class="font-sans">
+ <!-- <Algolinks.algo.zyx https://github.com/algolinks/algolinks.algo.xyz/blob/main/index.html HTML Code updated 6/13/24 code below> -->
+ <main class="font-sans">
 
     <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 m-8">
       <div class="flex flex-col items-center">
         <div class="text-xs text-sky-950 md:text-lg font-semibold p-1">Official / Governance</div>
         <a href="https://algorandtechnologies.com/" target="_blank" class="text-xs text-blue-900 font-semibold p-1 md:text-base hover:text-orange-700 search-item" data-tags="Official ">algorandtechnologies.com</a>
         <a href="https://www.algorand.foundation/" target="_blank" class="text-xs text-blue-900 font-semibold p-1 md:text-base hover:text-orange-700 search-item" data-tags="Official ">algorand.foundation</a>
-        <a href="https://governance.algorand.foundation/" target="_blank" class="text-xs text-blue-900 font-semibold p-1 md:text-base hover:text-orange-700 search-item" data-tags="algorand Official ">Governance Portal</a>
+        <a href="https://governance.algorand.foundation/" target="_blank" class="text-xs text-blue-900 font-semibold p-1 md:text-base hover:text-orange-700 search-item" data-tags="dapps algorand Official ">Governance Portal</a>
         <a href="http://metrics.algorand.org/" target="_blank" class="text-xs text-blue-900 font-semibold p-1 md:text-base hover:text-orange-700 search-item" data-tags="Governance Official ">metrics.algorand.org</a>
         <a href="https://xgov-viewer.netlify.app/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Governance ">xgov-viewer-netlify.app</a>
       </div>
@@ -172,12 +172,14 @@
         <a href="https://alexisrondeau.me/algorand-ballet/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Explorers ">alexisrondeau.me/algorand-ballet</a>
         <a href="https://dexscreener.com/algorand" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Explorers ">dexscreener.com/algorand</a>
         <a href="https://allo.info/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Explorers Infrastructure">allo.info</a>
+        <a href="https://explorer.perawallet.app/asset/796425061/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item hidden" data-tags="coop">coop</a>
+        <a href="https://explorer.perawallet.app/asset/829992960/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item hidden" data-tags="Bartle Doo">Bartle Doo</a>
       </div>
 
       <div class="flex flex-col items-center">
         <div class="text-xs text-sky-950 md:text-lg font-semibold p-1">Wallets</div>
-        <a href="https://perawallet.app/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Wallets Official Defi dex aggregator yield farming Self-Custody Self Custody trade swap">perawallet.app</a>
-        <a href="https://defly.app/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Wallets Defi dex aggregator yield farming Self-Custody Self Custody trade swap">defly.app</a>
+        <a href="https://perawallet.app/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="dapps Wallets Official Defi dex aggregator yield farming Self-Custody Self Custody trade swap">perawallet.app</a>
+        <a href="https://defly.app/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="dapps Wallets Defi dex aggregator yield farming Self-Custody Self Custody trade swap">defly.app</a>
         <a href="https://www.daffione.com/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Wallets Self-Custody Self Custody">daffione.com</a>
         <a href="https://lute.app/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Wallets Self-Custody Self Custody">lute.app</a>        
         <a href="http://exodus.com/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Hardware Wallets dex Self-Custody Self Custody trade swap">exodus.com</a>
@@ -191,8 +193,8 @@
     <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 m-8">
       <div class="flex flex-col items-center">
         <div class="text-xs text-sky-950 md:text-lg font-semibold p-1">Charts / Trackers</div>
-        <a href="http://vestige.fi/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Defi Finance Charts Trackers dex aggregator Infrastructure trade swap">vestige.fi</a>
-        <a href="http://asastats.com/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Charts portfolio Trackers Infrastructure">asastats.com</a>
+        <a href="http://vestige.fi/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="dapps Defi Finance Charts Trackers dex aggregator Infrastructure trade swap">vestige.fi</a>
+        <a href="http://asastats.com/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="dapps Charts portfolio Trackers Infrastructure">asastats.com</a>
         <a href="https://www.coingecko.com/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Charts Trackers ">coingecko.com</a>
         <a href="https://defillama.com/chain/Algorand" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Charts Trackers ">defillama.com</a>
         <a href="https://coinmarketcap.com/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Charts Trackers ">coinmarketcap.com</a>
@@ -205,37 +207,52 @@
       <div class="flex flex-col items-center">
         <div class="text-xs text-sky-950 md:text-lg font-semibold p-1">Defi / Finance</div>
         <a href="https://folks.finance/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Defi Finance dex aggregator yield farming borrow lending loan Liquid Governance trade swap">folks.finance</a>
+        <a href="https://app.folks.finance/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item hidden" data-tags="dapps">app.folks.finance/</a>
         <a href="https://algorai.finance/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Defi Finance options yield farming">algorai.finance</a>
+        <a href="https://app.algorai.finance/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item hidden" data-tags="dapps">app.algorai.finance/</a>
         <a href="https://c3.io/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Defi Finance yield farming trade swap">c3.io</a>
         <a href="https://www.silodefi.com/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Defi Finance ">silodefi.com (Testnet)</a>
         <a href="https://cometa.farm/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Defi Finance yield farming ">cometa.farm</a>
+        <a href="https://app.cometa.farm/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item hidden" data-tags="dapps">app.cometa.farm/</a>
         <a href="https://compx.io/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Defi Finance dex aggregator trade swap">compx.io</a>
+        <a href="https://app.compx.io/farms" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item hidden" data-tags="dapps">app.compx.io/farms</a>
       </div>
 
       <div class="flex flex-col items-center">
         <div class="text-xs text-sky-950 md:text-lg font-semibold p-1">DeFi / Minting / Bridges</div>
         <a href="https://messina.one/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Defi Finance Minting Bridges Liquid Governance">messina.one</a>
         <a href="http://algomint.io/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Defi Finance Minting Stablecoins Stablecoins GOUSD USA RWA real world assets ">algomint.io</a>
+        <a href="https://app.algomint.io/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item hidden" data-tags="dapps">app.algomint.io/</a>
+        <a href="https://basket.algomint.io/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item hidden" data-tags="dapps">basket.algomint.io/</a>      
         <a href="https://p.network/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Defi Finance Minting Bridges ">p.network</a>
+        <a href="https://dapp.p.network/#/swap?asset=btc&from=btc&to=eth" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item hidden" data-tags="dapps">dapp.p.network/#/</a>
         <a href="http://xbacked.io/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Defi Finance Minting Bridges Stablecoins USD USA RWA real world assets">xbacked.io</a>
+        <a href="https://app.xbacked.io/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item hidden" data-tags="dapps">app.xbacked.io/</a>
         <a href="https://wormhole.com/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Defi Finance Minting Bridges ">wormhole.com</a>
         <a href="https://londonbridge.io/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Defi Finance Minting Bridges ">londonbridge.io</a>
         <a href="https://www.deflex.fi/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Defi Finance dex aggregator ">deflex.fi</a>
         <a href="https://www.aramid.finance/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Defi Finance ">aramid.finance (Testnet)</a>
         <a href="https://brightside.finance/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Defi Finance ">brightside.finance</a>
         <a href="https://equitofinance.com/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Defi Finance ">equitofinance.com</a>
+        <a href="https://bridge.equitofinance.com/bridge" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item hidden" data-tags="dapps">bridge.equitofinance.com/bridge</a>
       </div>
 
       <div class="flex flex-col items-center">
         <div class="text-xs text-sky-950 md:text-lg font-semibold p-1">DeX / AMM</div>
-        <a href="http://vestige.fi/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Defi Finance Charts Trackers dex aggregator Infrastructure trade swap">vestige.fi</a>
+        <a href="http://vestige.fi/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="dapps Defi Finance Charts Trackers dex aggregator Infrastructure trade swap">vestige.fi</a>
         <a href="http://pact.fi/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Defi Finance AMM dex aggregator yield farming trade swap">pact.fi</a>
+        <a href="https://app.pact.fi/swap" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item hidden" data-tags="dapps">app.pact.fi/swap</a>
         <a href="http://tinyman.org/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Defi Finance AMM dex yield farming trade swap">tinyman.org</a>
-        <a href="http://app.humble.sh/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Defi Finance AMM yield farming trade swap ">app.humble.sh</a>
+        <a href="https://app.tinyman.org/#/swap?asset_in=0&asset_out=31566704" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item hidden" data-tags="dapps">app.tinyman.org/#/swap</a>
+        <a href="http://app.humble.sh/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="dapps Defi Finance AMM yield farming trade swap ">app.humble.sh</a>
         <a href="http://about.algodex.com/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Defi Finance trade swap">about.algodex.com</a>
         <a href="https://ultrade.org/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Defi Finance trade swap">ultrade.org (Testnet)</a>
         <a href="https://www.althena.io/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Defi Finance dex aggregator trade swap">althena.io</a>
         <a href="https://www.alammex.com/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Defi Finance dex aggregator"trade swap>alammex.com</a>
+        <a href="https://app.alammex.com/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item hidden" data-tags="dapps"trade swap>app.alammex.com/</a>
+        <a href="https://vestige.fi/asset/796425061" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item hidden" data-tags="coop">coop</a>
+        <a href="https://vestige.fi/asset/829992960" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item hidden" data-tags="Bartle Doo">Bartle Doo</a>
+        <a href="https://vestige.fi/asset/1284444444" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item hidden" data-tags="Orange">Orange</a>
       </div>
     </div>
 
@@ -245,28 +262,31 @@
       <div class="flex flex-col items-center">
         <div class="text-xs text-sky-950 md:text-lg font-semibold p-1">NFT / Apps + Support</div>
         <a href="https://www.asalytic.app/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="NFTexplorer marketplace ">asalytic.app</a>
-        <a href="https://highforge.io/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="NFT ">highforge.io</a>
-        <a href="https://www.minthol.art/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="NFT ">minthol.art</a>
-        <a href="https://nf.domains/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="NFT Algorand name service marketplace Non-Fungible Domains readable identities for your wallet NFD">app.nf.domains</a>
-        <a href="https://www.flippingalgos.xyz/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="NFT explorer staking raffle ">flippingalgos.xyz</a>
+        <a href="https://highforge.io/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="dapps NFT ">highforge.io</a>
+        <a href="https://www.minthol.art/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="dapps NFT ">minthol.art</a>
+        <a href="https://nf.domains/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="dapps NFT Algorand name service marketplace Non-Fungible Domains readable identities for your wallet NFD">app.nf.domains</a>
+        <a href="https://www.flippingalgos.xyz/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="dapps NFT explorer staking raffle ">flippingalgos.xyz</a>
+        <a href="https://www.asalytic.app/collection/bartle-doo-derp-squad?tab=market&traitTypes=&traitValues=&filterTypes=&filterValues=" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item hidden" data-tags="Bartle Doo Derp Squad">Bartle Doo Derp Squad</a>
+
       </div>
 
       <div class="flex flex-col items-center">
         <div class="text-xs text-sky-950 md:text-lg font-semibold p-1">NFT / Auction / Markets</div>
-        <a href="https://exa.market/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="NFT marketplace Auctions Shuffles">exa.market</a>
-        <a href="http://algoxnft.com/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="NFT marketplace Auctions Shuffles">algoxnft.com</a>
-        <a href="https://shufl.app/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="NFT marketplace Shuffles">shufl.app</a>
+        <a href="http://algoxnft.com/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="dapps NFT marketplace Auctions Shuffles">algoxnft.com</a>
+        <a href="https://shufl.app/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="dapps NFT marketplace Shuffles">shufl.app</a>
         <a href="https://dartroom.xyz/overview" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="NFT marketplace Auctions">dartroom.xyz</a>
-        <a href="https://www.rafflebees.com/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="NFT marketplace Auctions Shuffles">rafflebees.com</a>
-        <a href="https://atomixwap.xyz/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="NFT marketplace trade swap ">atomixwap.xyz</a>
+        <a href="https://www.rafflebees.com/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="dapps NFT marketplace Auctions Shuffles">rafflebees.com</a>
+        <a href="https://atomixwap.xyz/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="dapps NFT marketplace trade swap ">atomixwap.xyz</a>
       </div>
 
       <div class="flex flex-col items-center">
-        <div class="text-xs text-sky-950 md:text-lg font-semibold p-1">NFT / Markets</div>
-        <a href="http://randgallery.com/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="NFT marketplace Auctions Shuffles">randgallery.com</a>
-        <a href="http://algogems.io/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="NFT marketplace Auctions Shuffles">algogems.io</a>
+        <div class="text-xs text-sky-950 md:text-lg font-semibold p-1">NFT / Auction / Markets</div>
+        <a href="https://exa.market/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="dapps NFT marketplace Auctions Shuffles">exa.market</a>
+        <a href="http://randgallery.com/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="dapps NFT marketplace Auctions Shuffles">randgallery.com</a>
+        <a href="http://algogems.io/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="dapps NFT marketplace Auctions Shuffles">algogems.io</a>
         <a href="https://ynft.club/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="NFT marketplace">ynft.club</a>
-        <a href="https://ab2.gallery/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="NFT marketplace Auctions">ab2.gallery</a>
+        <!-- <a href="https://ab2.gallery/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="NFT marketplace Auctions">ab2.gallery</a>
+         site doesn't seem to be working anymore-->      
       </div>
 
       <div class="flex flex-col items-center">
@@ -295,11 +315,11 @@
       <div class="flex flex-col items-center">
         <div class="text-xs text-sky-950 md:text-lg font-semibold p-1">Dev Tools</div>
         <a href="http://github.com/algorand" target="_blank" class="text-xs text-blue-900 font-semibold p-1 md:text-base hover:text-orange-700 search-item" data-tags="Dev Tools Official algorand foundation">github.com/algorand</a>
-        <a href="https://algosafe.io/" target="_blank" class="text-xs text-blue-900 font-semibold p-1 md:text-base hover:text-orange-700 search-item" data-tags="Dev Tools Multi-Sig signature sign transactions Digital Asset Safe payment ">algosafe.io</a>
-        <a href="https://we.thurstober.com/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="NFT Dev Tools sign transactions payment">we.thurstober.com</a>
-        <a href="https://labs.thurstober.com/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="NFT Dev Tools sign transactions payment">labs.thurstober.com</a>
-        <a href="https://algotools.org/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Dev Tools sign transactions payment ">algotools.org</a>
-        <a href="https://txnduck.vercel.app/en" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Dev Tools sign transactions payment">txnduck.vercel.app</a>
+        <a href="https://algosafe.io/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Dev Tools Multi-Sig signature sign transactions Digital Asset Safe payment ">algosafe.io</a>
+        <a href="https://we.thurstober.com/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="dapps NFT Dev Tools sign transactions payment">we.thurstober.com</a>
+        <a href="https://labs.thurstober.com/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="dapps NFT Dev Tools sign transactions payment">labs.thurstober.com</a>
+        <a href="https://algotools.org/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="dapps Dev Tools sign transactions payment ">algotools.org</a>
+        <a href="https://txnduck.vercel.app/en" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="dapps Dev Tools sign transactions payment">txnduck.vercel.app</a>
       </div>
 
       <div class="flex flex-col items-center">
@@ -340,7 +360,7 @@
         <a href="http://vestaequity.net/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="RWA real world assets Real Estate ">vestaequity.net</a>
         <a href="https://www.meld.gold/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="RWA real world assets defi ">meld.gold</a>
         <a href="https://nimblr.insure/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="insurance Alternative asset">nimblr.insure</a>
-        <a href="https://app.daybyday.io/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="insurance Alternative asset">app.daybyday.io</a>
+        <a href="https://app.daybyday.io/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item hidden" data-tags="dapps">app.daybyday.io</a>
         <a href="https://www.travelx.io/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="RWA real world assets airline tickets Alternative asset">travelx.io</a>
         <a href="https://quantoz.com/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="RWA real world assets EURO EURD Stablecoins">quantoz.com</a>
         <a href="https://eurs.stasis.net/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="RWA real world assets EURO EURS Stablecoins">eurs.stasis.net</a>
@@ -351,15 +371,17 @@
       <div class="flex flex-col items-center">
         <div class="text-xs text-sky-950 md:text-lg font-semibold p-1">Proof of Data/ Utility / Tools</div>
         <a href="https://www.gora.io/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Proof of Data Oracles Bridges">gora.io</a>
-        <a href="https://pop.allo.info/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Proof of Data ">pop.allo.info</a>
+        <a href="https://pop.allo.info/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="dapps Proof of Data ">pop.allo.info</a>
         <a href="http://licitdoc.com/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Proof of Data ">licitdoc.com</a>
         <a href="http://algoscout.net/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Proof of Data ">algoscout.net</a>
         <a href="https://demo.xballot.net/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Proof of Data ">demo.xballot.net (Testnet)</a>
         <a href="https://goplausible.com/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Proof of Data Infrastructure">goplausible.com</a>
+        <a href="https://goplausible.xyz/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item hidden" data-tags="dapps">goplausible.xyz/</a>
         <a href="https://www.folksfeed.io/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Proof of Data Oracles">folksfeed.io</a>
         <a href="https://folks-party.algo.surf/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Proof of Data ">folks-party.algo.surf</a>
-        <a href="https://www.updog.vote/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Proof of Data ">updog.vote</a>
-        <a href="https://governance.perawallet.app/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Proof of Data ">governance.perawallet.app</a>
+        <!-- link no longer working, <a href="https://www.updog.vote/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Proof of Data ">updog.vote</a>
+             -->
+        <a href="https://governance.perawallet.app/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="dapps Proof of Data ">governance.perawallet.app</a>
       </div>
 
       <div class="flex flex-col items-center">
@@ -368,7 +390,7 @@
         <a href="https://www.vendiblelabs.com/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Infrastructure ">vendiblelabs.com</a>
         <a href="https://linktr.ee/NFTDiscordPal" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="">NFTDiscordPal</a>
         <a href="https://algovanity.com/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="custom readable named wallet ">algovanity.com</a>
-        <a href="https://metapost.io/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="reddit web3 public messaging">metapost.io</a>
+        <a href="https://metapost.io/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="dapps reddit web3 public messaging">metapost.io</a>
         <a href="https://fairinbox.io/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="email messaging web3 messaging">fairinbox.io</a>
         <a href="https://notiboy.com/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="email messaging web3 messaging">notiboy.com</a>
       </div>
@@ -380,17 +402,20 @@
       <div class="flex flex-col items-center">
         <div class="text-xs text-sky-950 md:text-lg font-semibold p-1">eCommerce Integration</div>
         <a href="https://hesab.com/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="HesabPay Digital Payments Platform in Afghanistan International payments Digital payments humanitarian aid">hesab.com</a>
-        <a href="http://andpay.io/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Digital payments trade ">andpay.io</a>
+        <a href="http://andpay.io/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Digital payments trade ">andpay.io (testnet)</a>
         <a href="https://alright.app/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Digital payments trade">alright.app (testnet)</a>
         <a href="https://www.nexusasa.info/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Digital payments trade ">nexusasa.info</a>
+        <a href="https://app.nexusasa.com/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item hidden" data-tags="dapps">app.nexusasa.com/</a>
       </div>
 
       <div class="flex flex-col items-center">
         <div class="text-xs text-sky-950 md:text-lg font-semibold p-1">Gaming / Betting</div>
         <a href="http://algo-casino.com/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Gaming Betting gambling ">algo-casino.com</a>
+        <a href="https://poker.algo-casino.com/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item hidden" data-tags="dapps">poker.algo-casino.com/</a>
+        <a href="https://bet.algo-casino.com/?t=1" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item hidden" data-tags="dapps">bet.algo-casino.com/</a>
         <a href="https://smartpoker.io/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Gaming Betting gambling ">smartpoker.io</a>
         <a href="https://algobets.netlify.app/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Gaming Betting gambling ">algobets.netlify.app</a>
-        <a href="https://www.lottorace.cloud/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="Gaming Betting gambling ">lottorace.cloud</a>
+        <a href="https://www.lottorace.cloud/" target="_blank" class="text-xs text-blue-900 p-1 md:text-base hover:text-orange-700 search-item" data-tags="dapps Gaming Betting gambling ">lottorace.cloud</a>
       </div>
 
       <div class="flex flex-col items-center">
@@ -463,7 +488,7 @@
     <hr class="border-solid border-blue-600 border-4 opacity-15">
   </main>
 
-<!-- JavaScript for Search and Background Functionality -->
+<!-- JavaScript for Search and Background Functionality updated 6/13/24-->
  <script>
    function performSearch(query) {
     const items = document.querySelectorAll('.search-item');
