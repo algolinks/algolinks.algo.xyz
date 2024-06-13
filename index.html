@@ -463,9 +463,9 @@
     <hr class="border-solid border-blue-600 border-4 opacity-15">
   </main>
 
-<!-- JavaScript for Search Functionality added 6/12/24 for searching with the button above search -->
-<script>
-  function performSearch(query) {
+<!-- JavaScript for Search and Background Functionality -->
+ <script>
+   function performSearch(query) {
     const items = document.querySelectorAll('.search-item');
     items.forEach(item => {
       const tags = item.getAttribute('data-tags') ? item.getAttribute('data-tags').toLowerCase() : '';
@@ -475,80 +475,33 @@
         item.style.display = 'none';
       }
     });
-  }
+   }
 
-  // for search box button above the search box I think added 6/12/24
-  document.getElementById('searchForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const queryInput = document.getElementById('searchInput').value.toLowerCase();
-    performSearch(queryInput);
-  });
-
-// Listen for input event on the search input field added 6/12/24
-document.getElementById('searchInput').addEventListener('input', function() {
-    const queryInput = this.value.toLowerCase();
-    performSearch(queryInput);
-  });
-
-  document.getElementById('searchOptions').addEventListener('change', function() {
-    const searchOption = this.value.toLowerCase();
-    performSearch(searchOption);
-  });
-</script>
-
-<!-- JavaScript for Search Functionality trying to move the button about search added 6/12/24 -->
-<script>
-  document.getElementById('linksearch').addEventListener('submit', function(event) {
+    document.getElementById('searchForm').addEventListener('submit', function(event) {
     event.preventDefault();
     const query = document.getElementById('searchInput').value.toLowerCase();
-    const items = document.querySelectorAll('.search-item');
-    items.forEach(item => {
-      const tags = item.getAttribute('data-tags') ? item.getAttribute('data-tags').toLowerCase() : '';
-      if (item.textContent.toLowerCase().includes(query) || tags.includes(query)) {
-        item.style.display = 'block';
-      } else {
-        item.style.display = 'none';
-      }
-    });
-  });
-</script>
+    performSearch(query);
+   });
 
-<!-- OG before 6/12/24
-  !-- JavaScript for Search Functionality OG below 6/12/24--
-  <script>
-    document.getElementById('searchForm').addEventListener('submit', function(event) {
-      event.preventDefault();
-      const query = document.getElementById('searchInput').value.toLowerCase();
-      const items = document.querySelectorAll('.search-item');
-      items.forEach(item => {
-        const tags = item.getAttribute('data-tags') ? item.getAttribute('data-tags').toLowerCase() : '';
-        if (item.textContent.toLowerCase().includes(query) || tags.includes(query)) {
-          item.style.display = 'block';
-        } else {
-          item.style.display = 'none';
-        }
-      });
-    });
-  </script>
--->
+    document.getElementById('searchOptions').addEventListener('change', function() {
+    const query = this.value.toLowerCase();
+    performSearch(query);
+   });
 
-<!-- JavaScript for Background Changead added 6/12/24 -->
-<script>
-  document.getElementById('backgroundSelect').addEventListener('change', function() {
-    const bgOverlay = document.getElementById('bgOverlay');
+    document.getElementById('backgroundSelect').addEventListener('change', function() {
     const selectedImage = this.value;
-    bgOverlay.style.backgroundImage = `url('${selectedImage}')`;
-  });
+    document.getElementById('bgOverlay').style.backgroundImage = `url('${selectedImage}')`;
+   });
 
-  document.getElementById('backgroundSelectPanel').addEventListener('change', function() {
-    const bgOverlay = document.getElementById('bgOverlay');
-    const selectedImage = this.value;
-    bgOverlay.style.backgroundImage = `url('${selectedImage}')`;
-  });
-</script>
+    // Listen for input event on the search input field added 6/12/24
+    document.getElementById('searchInput').addEventListener('input', function() {
+    const queryInput = this.value.toLowerCase();
+    performSearch(queryInput);
+   });
+ </script>
+
 
 <!-- Footer never changed 6/12/24-->
-<html lang="en">
  <footer class="text-start text-gray-800 text-sm py-4">
     <div class="container mx-auto flex justify-between items-center px-4">
       <div class="text-center">
