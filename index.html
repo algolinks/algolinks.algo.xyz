@@ -44,6 +44,48 @@
     header.header-grid .grid-item form {
       margin: 0;
     }
+    /* Burger menu styles */
+    .burger-menu {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 1000;
+    }
+    
+    .burger-button {
+      background: rgba(12, 74, 110, 0.9);
+      border: none;
+      border-radius: 8px;
+      padding: 12px;
+      cursor: pointer;
+      color: white;
+      font-size: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease;
+    }
+    
+    .burger-button:hover {
+      background: rgba(12, 74, 110, 1);
+    }
+    
+    .burger-dropdown {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      min-width: 420px;
+      max-width: 450px;
+      border: 2px solid rgba(12, 74, 110, 0.2);
+      display: none;
+      z-index: 1001;
+    }
+    
+    .burger-dropdown.show {
+      display: block;
+    }
   </style>
 
 <!--head 6/12/24>--> 
@@ -70,6 +112,21 @@
         </div>
     </div>
  -->
+  <div class="burger-menu">
+    <button class="burger-button" id="burgerButton" title="Vestige Swap Widget">
+      ⚡
+    </button>
+    <div class="burger-dropdown" id="burgerDropdown">
+      <iframe 
+        title="Vestige Swap Widget" 
+        src="https://vestige.fi/widget/swap?assetIn=0&assetOut=31566704&noCookie=true" 
+        width="400" 
+        height="450"
+        style="border: none; border-radius: 8px;"
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
     
    <!-- center text -->
     <div class="grid-item" style="grid-column: 1 / 4; grid-row: 1;">
@@ -654,6 +711,20 @@
     const queryInput = this.value.toLowerCase();
     performSearch(queryInput);
    });
+
+   document.getElementById('burgerButton').addEventListener('click', function() {
+    const dropdown = document.getElementById('burgerDropdown');
+    dropdown.classList.toggle('show');
+   });
+
+    document.addEventListener('click', function(event) {
+      const burgerMenu = document.querySelector('.burger-menu');
+      const dropdown = document.getElementById('burgerDropdown');
+      
+      if (!burgerMenu.contains(event.target)) {
+        dropdown.classList.remove('show');
+      }
+    });
  </script>
 
 
